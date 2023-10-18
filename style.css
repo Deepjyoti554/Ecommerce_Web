@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background: var(--gradient-light-gradient-30, linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%));
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    /* font-size: 1.5vw;
+    font-weight: 500; */
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(228, 228, 244); */
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(228, 228, 244); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1vw 3vw;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.pages{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;  
+    width: 100%; 
+}
+
+.card{
+    width: 75vw;
+}
+
+.quatity{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2vw;
+    /* background-color: chocolate; */
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: chocolate;
+    color: whitesmoke;
+    margin-top: 5vw;
+    padding: 2vw;
+}
+.amount_info{
+    background-color: darkorange;
+    padding: 1vw;
+    border-radius: 50%;
+}
+
+/* .full_product{
+    background-color: aliceblue;
+} */
+
+#product_view{
+    padding: 6vw;
+    /* background-color: aliceblue; */
+    /* background-color: red; */
+    /* border: 2px solid black; */
+}
+#product_view_img{
+    height: 55vh;
+    width: auto;
+    margin-bottom: 3vw;
+}
+#product_view_para{
+    margin: 1vw;
+}
+#product_view_button{
+    padding: 1vw;
+    margin-left: 1vw;
+}
+.btn{
+    padding: 1vw;
+    background-color: aqua;
+}
+
+#addToCardItem{
+    width: 20rem;
+    margin: 30px 20px;
+    padding: 14px 22px;
+    background-color: aliceblue;
+}
+
+#card_title{
+    margin: 8px 0;
+}
+
+#card_desc{
+    margin: 8px 0;
+}
+
+#card_category{
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .pages{
+        display: flex;
+        align-items: center;
+    }
+
+    #product_view{
+        flex-direction: column;
+    }
+    #product_view img{
+        height: 35vh;
+        margin-left: 10px;
+    }
+}

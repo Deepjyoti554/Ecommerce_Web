@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css"> -->
+    <title>Ecommerce Website</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div class="navbar"> -->
+            <div class="navbar nav">
+                <h3 class="logo">Vishal</h3>
+                <div class="lists">
+                    <p class="menSection">Men</p>
+                    <p class="womenSection">Women</p>
+                    <p class="jewelerySection">Jewelery</p>
+                    <p class="electronicsSection">Electronics</p>
+                    <div class="dropdown">
+                        <button class="dropbtn">Sort by price</button>
+                        <div class="dropdown-content">
+                            <button onclick="sortAsce()"><a href="#">Ascending Order</a></button>
+                            <button onclick="sortDesc()"><a href="#">Descending Order</a></button>
+                        </div>
+                    </div>
+                    <!-- <button onclick="sortFun()">Sort by price</button> -->
+                    <input oninput="getProducts()" type="text" placeholder="Search here" id="myInput" value="">
+                    <!-- <button onclick="getValue()">Search</button> -->
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <a href="./page.html"><span><i class="ri-briefcase-line"></i></span></a>
+                </div>
+                <button class="ham-burger"><i class="ri-menu-line"></i></button>
+            </div>
+
+            <div class="poster">
+                <div class="poster_info">
+                    <p>Trade-in-offer</p>
+                    <h3>Super values deal<br> <span>On all products</span></h3>
+                    <p>Save more with coupons & up to 70% off</p>
+                    <button class="btn btn-outline-primary">Shop now</button>
+                </div>
+                <img src="./ecommerce2.png" alt="">
+            </div>
+        <!-- </div> -->
+
+        <div class="products" style="width: 18rem;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
